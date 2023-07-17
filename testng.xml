@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="My_Suite" parallel="tests">
+	
+	 <listeners>
+		<listener class-name="UtilityFile.ExtentReportManager"/>
+	</listeners>
+	
+  	<test thread-count="5" name="ChromeBrowserTest">
+	  <parameter name="Browser" value="Chrome"/>
+    <classes>
+     <!--  <class name="TestClass.TC_001_IndexPage_Test"/>
+     
+           <class name="TestClass.TC_002_LogInPage_Test"/>-->
+           
+            <class name="TestClass.TC_009_EndToEnd_Test"/>
+      
+      
+    </classes>
+  </test> 
+  
+</suite>
+

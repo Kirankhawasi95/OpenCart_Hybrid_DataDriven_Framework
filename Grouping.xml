@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OpenCart_Groups">
+	
+	<test thread-count="5" name="Groups_Test">
+		<parameter name="Browser" value="Chrome"/>
+		
+			<groups>
+				<run>
+					
+					<include name="Regression"/>
+					<include name="Sanity"/>		
+				</run>
+			</groups>
+			<classes>
+				 <class name="TestClass.TC_008_CheckOutPage_Test"/>
+			     <class name="TestClass.TC_003_AccountReg_Test"/>
+			      <class name="TestClass.TC_004_HomePage_Test"/>
+			      <class name="TestClass.TC_006_WishListPage_Test"/>
+			      <class name="TestClass.TC_001_IndexPage_Test"/>
+			      <class name="TestClass.TC_007_ShopingCartPage_Test"/>
+			      <class name="TestClass.TC_005_ProductSearchPage_Test"/>
+			      <class name="TestClass.TC_002_LogInPage_Test"/> 
+			</classes>
+		
+	</test>
+	
+</suite>
