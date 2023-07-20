@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestClass.TC_009_EndToEnd_Test">
+      <class name="TestClass.TC_005_ProductSearchPage_Test">
         <methods>
-          <include name="IndexPage_Test"/>
           <include name="Launch_Application"/>
           <include name="Application_Close"/>
-          <include name="ProductSearchPage_Test"/>
-          <include name="ShopingCartPage_Test"/>
+          <include name="ProductPage_Test"/>
+          <include name="Search_Product"/>
         </methods>
-      </class> <!-- TestClass.TC_009_EndToEnd_Test -->
+      </class> <!-- TestClass.TC_005_ProductSearchPage_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
