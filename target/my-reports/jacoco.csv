@@ -1,0 +1,11 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+OpenCartProject,PageObjects,WishListPage,0,50,0,0,0,11,0,4,0,4
+OpenCartProject,PageObjects,ProductSearchPage,19,15,0,0,4,4,2,2,2,2
+OpenCartProject,PageObjects,CheckOutPage,0,119,0,0,0,23,0,5,0,5
+OpenCartProject,PageObjects,ShopingCartPage,0,76,0,0,0,16,0,4,0,4
+OpenCartProject,PageObjects,HomePage,66,0,2,0,19,0,6,0,5,0
+OpenCartProject,PageObjects,BasePage,0,13,0,0,0,5,0,2,0,2
+OpenCartProject,PageObjects,LogIn_Page,26,35,0,0,4,7,1,2,1,2
+OpenCartProject,PageObjects,NewAccountReg_Page,61,0,0,0,11,0,3,0,3,0
+OpenCartProject,PageObjects,IndexPage,27,34,0,0,6,9,3,4,3,4
+OpenCartProject,ActionClass,Action_Class,216,0,14,0,74,0,19,0,12,0

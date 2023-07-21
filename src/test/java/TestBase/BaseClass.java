@@ -135,7 +135,11 @@ public class BaseClass {
 			{
 				e.getMessage();
 			}
-			return destfile;
+			//return destfile;
+			
+			String newImageString = "http://localhost:8089/job/MyStoreProject/ws/MyStoreProject/ScreenShots/" + Tname + "_"
+					+ TimeStamp + ".png";
+			return newImageString;
 					
 		}
 

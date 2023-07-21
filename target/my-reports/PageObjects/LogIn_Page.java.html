@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>LogIn_Page.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">OpenCartProject</a> &gt; <a href="index.source.html" class="el_package">PageObjects</a> &gt; <span class="el_source">LogIn_Page.java</span></div><h1>LogIn_Page.java</h1><pre class="source lang-java linenums">/**
+ * 
+ */
+package PageObjects;
+
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import ActionClass.Action_Class;
+
+
+
+/**
+ * @author kpkmt942
+ *
+ */
+ public class LogIn_Page extends BasePage{
+	
+<span class="fc" id="L21">	Action_Class act=new Action_Class();</span>
+	 
+	public LogIn_Page(WebDriver driver) {
+<span class="fc" id="L24">		super(driver);</span>
+		
+<span class="fc" id="L26">	}</span>
+
+	@FindBy (id=&quot;input-email&quot;)
+	WebElement User_Name;
+	
+	@FindBy (id=&quot;input-password&quot;)
+    WebElement PassWord_Nme;
+	
+	@FindBy (xpath=&quot;//button[@type='submit']&quot;)
+    WebElement LogIn_Btn;
+	
+	@FindBy (xpath=&quot;//h2[normalize-space()='My Account']&quot;)
+    WebElement MyAccount;
+	
+
+	
+	public HomePage LogIntoApplication (String userName, String password,String exp)
+
+	{
+<span class="nc" id="L45">		act.TextSend(User_Name, userName);</span>
+<span class="nc" id="L46">		act.TextSend(PassWord_Nme, password);</span>
+<span class="nc" id="L47">		act.JavascriptExe(driver, LogIn_Btn);</span>
+<span class="nc" id="L48">		return new HomePage(driver);</span>
+	}
+	
+	
+	public WishListPage LogIntoApplication2 (String userName, String password,String exp)
+
+	{
+<span class="fc" id="L55">		act.TextSend(User_Name, userName);</span>
+<span class="fc" id="L56">		act.TextSend(PassWord_Nme, password);</span>
+<span class="fc" id="L57">		act.JavascriptExe(driver, LogIn_Btn);</span>
+<span class="fc" id="L58">		return new WishListPage(driver);</span>
+	}
+	
+//	public String VerifyLogin()
+//	{
+//		String text=act.GetText(driver, MyAccount);
+//		return text;
+//	}
+	
+	
+//	public HomePage Clickon_logInBtn()
+//	{
+//		act.JavascriptExe(driver, LogIn_Btn);
+//		return new HomePage(driver);
+//	}
+	
+}
+	
+	
+
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

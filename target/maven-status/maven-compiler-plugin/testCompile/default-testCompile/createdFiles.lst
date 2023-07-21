@@ -11,7 +11,6 @@ TestBase\BaseClass.class
 ActionClass\Action_Class.class
 UtilityFile\ExtentReportManager.class
 PageObjects\CheckOutPage.class
-ActionClass_Interface\Interface_AbstractMrthod.class
 TestClass\TC_008_CheckOutPage_Test.class
 PageObjects\NewAccountReg_Page.class
 PageObjects\LogIn_Page.class

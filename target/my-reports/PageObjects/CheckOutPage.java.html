@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CheckOutPage.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">OpenCartProject</a> &gt; <a href="index.source.html" class="el_package">PageObjects</a> &gt; <span class="el_source">CheckOutPage.java</span></div><h1>CheckOutPage.java</h1><pre class="source lang-java linenums">/**
+ * 
+ */
+package PageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import ActionClass.Action_Class;
+
+/**
+ * @author kpkmt942
+ *
+ */
+public class CheckOutPage extends BasePage{
+
+<span class="fc" id="L18">	Action_Class act=new Action_Class();</span>
+	public CheckOutPage(WebDriver driver) {
+<span class="fc" id="L20">		super(driver);</span>
+<span class="fc" id="L21">	}</span>
+	
+	@FindBy (xpath=&quot;//input[@id='input-shipping-existing']&quot;)
+	WebElement RedioBtn1;
+	
+	@FindBy (xpath=&quot;//input[@id='input-shipping-new']&quot;)
+	WebElement RedioBtn2;
+	
+	@FindBy(id=&quot;input-shipping-firstname&quot;)
+	WebElement First_name;
+	
+	@FindBy(id=&quot;input-shipping-lastname&quot;)
+	WebElement Last_Name;
+	
+	@FindBy(id=&quot;input-shipping-company&quot;)
+	WebElement CompanyName;
+	
+	@FindBy(id=&quot;input-shipping-address-1&quot;)
+	WebElement Address1;
+	
+	@FindBy(id=&quot;input-shipping-address-2&quot;)
+	WebElement Address2;
+	
+	@FindBy(id=&quot;input-shipping-city&quot;)
+	WebElement City;
+	
+	@FindBy(id=&quot;input-shipping-postcode&quot;)
+	WebElement Postel;
+	
+	@FindBy(id=&quot;input-shipping-country&quot;)
+	WebElement Countray;
+	
+	@FindBy(id=&quot;input-shipping-zone&quot;)
+	WebElement State;
+	
+	@FindBy(id=&quot;button-shipping-address&quot;)
+	WebElement Countinue;
+	
+	@FindBy(xpath=&quot;//div[@class=\&quot;table-responsive\&quot;]//tbody//tr//td&quot;)
+	WebElement ProductQty;
+	
+
+	@FindBy(xpath=&quot;(//div[@class=\&quot;table-responsive\&quot;]//tfoot//td)[4]&quot;)
+	WebElement ProductTotal;
+	
+	
+	public void CheckRedioBtn1()
+	{
+<span class="fc" id="L69">		System.out.println(RedioBtn1.isEnabled());</span>
+<span class="fc" id="L70">		RedioBtn2.click();	</span>
+		
+<span class="fc" id="L72">	}</span>
+	
+	public void SetAddress(String fname, String lname, String Cname, String add1, String add2)
+	{
+<span class="fc" id="L76">		act.TextSend(First_name, fname);</span>
+<span class="fc" id="L77">		act.TextSend(Last_Name, lname);</span>
+<span class="fc" id="L78">		act.TextSend(CompanyName, Cname);</span>
+<span class="fc" id="L79">		act.TextSend(Address1, add1);</span>
+<span class="fc" id="L80">		act.TextSend(Address2, add2);	</span>
+<span class="fc" id="L81">	}</span>
+	
+	public void SetAddress2(String city, String pcode, int country, int state)
+	{
+<span class="fc" id="L85">		act.TextSend(City, city);</span>
+<span class="fc" id="L86">		act.TextSend(Postel, pcode);</span>
+<span class="fc" id="L87">		act.SelectByIndex(Countray, country);</span>
+<span class="fc" id="L88">		act.SelectByIndex(State, state);</span>
+<span class="fc" id="L89">		act.JavascriptExe(driver, Countinue);</span>
+	
+<span class="fc" id="L91">	}</span>
+	
+	public void GetfinalproductQty()
+	{
+<span class="fc" id="L95">		String qty=ProductQty.getText();</span>
+<span class="fc" id="L96">		System.out.println(&quot;final added product qty is:&quot;+qty);</span>
+		
+<span class="fc" id="L98">		String qtyPrice=ProductTotal.getText();</span>
+<span class="fc" id="L99">		System.out.println(&quot;final added product price:&quot;+qtyPrice);</span>
+	
+<span class="fc" id="L101">	}</span>
+	
+
+//-------------------------------------------------------------&gt;&gt;
+		 			//Need to check
+//		String qty=ProductQty.getText();
+//		String EmtyCht=qty.replaceAll(&quot;[^a-zA-Z0-9]&quot;, &quot;&quot;);
+//		Integer qty2=Integer.parseInt(EmtyCht);
+//		System.out.println(&quot;final added product qty is:&quot;+qty2);
+		
+//		String qtyPrice=ProductTotal.getText();
+//		String EmtyCht=qtyPrice.replaceAll(&quot;[^a-zA-Z0-9]&quot;, &quot;&quot;);
+//		Integer qtyPrice2=Integer.parseInt(EmtyCht);
+//		System.out.println(&quot;final added product price:&quot;+qtyPrice2);
+
+//-------------------------------------------------------------&gt;&gt;
+		
+}
+		
+		
+		
+		
+		
+		
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Action_Class.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">OpenCartProject</a> &gt; <a href="index.source.html" class="el_package">ActionClass</a> &gt; <span class="el_source">Action_Class.java</span></div><h1>Action_Class.java</h1><pre class="source lang-java linenums">/**
+ * 
+ */
+package ActionClass;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+
+import java.time.Duration;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.JavascriptExecutor;
+
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+
+/**
+ * @author kpkmt942
+ *
+ */
+<span class="nc" id="L24">public class Action_Class </span>
+{
+
+	/**
+	 *Method for mouse and keybord operation 
+	 * @return Boolean
+	 * 
+	 *
+	 * Check MyStore Logo Image Presence
+	 * @return - true/false
+	 */
+	
+	//Method for mouse and keybord action 
+	public void Click(WebDriver driver, WebElement ele) 
+	
+	{
+<span class="nc" id="L40">		Actions act= new Actions(driver);</span>
+<span class="nc" id="L41">		act.click(ele).build().perform();</span>
+<span class="nc" id="L42">	}</span>
+
+
+	/**
+	 * Method For to check any Logo or Any WebElement is display or not 
+	 * @return Boolean
+	 * 
+	 *
+	 * Check MyStore Logo Image Presence
+	 * @return - true/false
+	 */
+//Method For to check any Logo or Any WebElement is display or not 
+	public boolean Isdisplayed(WebDriver driver, WebElement ele)
+	{
+		
+<span class="nc" id="L57">		boolean flag =false;</span>
+		
+<span class="nc" id="L59">		ele.isDisplayed();</span>
+<span class="nc" id="L60">		flag = true;</span>
+		
+<span class="nc bnc" id="L62" title="All 2 branches missed.">		if(flag)</span>
+		{
+<span class="nc" id="L64">			System.out.println(&quot;Successfully Found And Element is displayed at&quot;);</span>
+		}
+		
+		else
+		{
+<span class="nc" id="L69">			System.out.println(&quot;Successfully Found Element But Element is not displayed at&quot;);</span>
+		}
+<span class="nc" id="L71">		return flag;</span>
+		}
+	
+	//Method for to check Radio button is Enable or not
+	public boolean IsEnable(WebDriver driver, WebElement ele)
+	{
+		
+<span class="nc" id="L78">		boolean flag =false;</span>
+		
+<span class="nc" id="L80">		ele.isEnabled();</span>
+<span class="nc" id="L81">		flag = true;</span>
+		
+<span class="nc bnc" id="L83" title="All 2 branches missed.">		if(flag)</span>
+		{
+<span class="nc" id="L85">			System.out.println(&quot;Successfully Found And Element is displayed at&quot;);</span>
+		}
+		
+		else
+		{
+<span class="nc" id="L90">			System.out.println(&quot;Successfully Found Element But Element is not displayed at&quot;);</span>
+		}
+<span class="nc" id="L92">		return flag;</span>
+		}
+	
+	//Method for to check Element  button is Selected or not
+	public boolean IsSelected(WebDriver driver, WebElement ele)
+	{
+		
+<span class="nc" id="L99">		boolean flag =false;</span>
+		
+<span class="nc" id="L101">		ele.isEnabled();</span>
+<span class="nc" id="L102">		flag = true;</span>
+		
+<span class="nc bnc" id="L104" title="All 2 branches missed.">		if(flag)</span>
+		{
+<span class="nc" id="L106">			System.out.println(&quot;Successfully Found And Element is displayed at&quot;);</span>
+		}
+		
+		else
+		{
+<span class="nc" id="L111">			System.out.println(&quot;Successfully Found Element But Element is not displayed at&quot;);</span>
+		}
+<span class="nc" id="L113">		return flag;</span>
+		}
+	
+	/**
+	 * Method Name Send the text in the Search Field box
+	 * @return 
+	 * 
+	 *
+	 * @Kiran text
+	 * @return - true/false
+	 */
+	
+	public boolean TextSend(WebElement ele, String text) 
+	{
+<span class="nc" id="L127">		boolean flag = false;</span>
+		
+		try {
+			
+<span class="nc" id="L131">			flag=ele.isDisplayed();</span>
+<span class="nc" id="L132">			ele.clear();</span>
+<span class="nc" id="L133">			ele.sendKeys(text);	</span>
+<span class="nc" id="L134">			flag=true;</span>
+			
+<span class="nc" id="L136">		}catch(Exception e)</span>
+		
+		{
+<span class="nc" id="L139">			System.out.println(&quot;Location Not Found&quot;);</span>
+<span class="nc" id="L140">			flag=false;</span>
+			
+		}finally {
+			
+<span class="nc bnc" id="L144" title="All 2 branches missed.">			if(flag)</span>
+			{
+<span class="nc" id="L146">				System.out.println(&quot;Successfully entered Text in the Search Fild&quot;);</span>
+			}else {
+<span class="nc" id="L148">				System.out.println(&quot;Unable to enter Text in the Search Fild&quot;);</span>
+			}
+
+		}
+<span class="nc" id="L152">		return flag;</span>
+		
+		
+	}
+
+
+	/**
+	 * MethodType is Get the Text in the WebElement
+	 * @return Text
+	 * 
+	 *
+	 * @Kiran GetText
+	 * @return - true/false
+	 */
+	public String GetText(WebDriver driver, WebElement ele)
+	{
+		
+<span class="nc" id="L169">		boolean flag = false;</span>
+			
+<span class="nc" id="L171">			String text=ele.getText();</span>
+<span class="nc" id="L172">			System.out.println(text);</span>
+<span class="nc" id="L173">			flag=true;</span>
+			
+<span class="nc bnc" id="L175" title="All 2 branches missed.">			if(flag)</span>
+			{
+<span class="nc" id="L177">				System.out.println(&quot;Successfully Found a displayed Text&quot;);</span>
+			}else
+				
+			{
+<span class="nc" id="L181">				System.out.println(&quot;Text not Found&quot;);</span>
+			}
+			
+<span class="nc" id="L184">		return text;</span>
+	}
+
+
+	/**
+	 * Method for Select class(SelectByIndex) used for Dropdown Action 
+	 * @return Text associated with value on WebElement 
+	 * 
+	 *
+	 * @Kiran Select a Text by value 
+	 * @return - true/false
+	 */
+	public boolean SelectByIndex(WebElement driver, int ele) {
+		
+<span class="nc" id="L198">		boolean flag=false;</span>
+		
+		try {
+			
+<span class="nc" id="L202">			Select sel=new Select(driver);</span>
+<span class="nc" id="L203">			sel.selectByIndex(ele);</span>
+<span class="nc" id="L204">			flag = true;</span>
+			
+<span class="nc" id="L206">		}catch(Exception e)</span>
+		
+		{
+<span class="nc" id="L209">			System.out.println(&quot;Index value is not Selected at&quot;);</span>
+<span class="nc" id="L210">			flag=false;</span>
+		}finally 
+		
+		{
+<span class="nc bnc" id="L214" title="All 2 branches missed.">			if(flag) </span>
+			{
+<span class="nc" id="L216">				System.out.println(&quot;Successfully selected index a value&quot;);</span>
+			}else
+			{
+<span class="nc" id="L219">				System.out.println(&quot;Unable to get the index value&quot;);</span>
+			}
+		}
+		
+<span class="nc" id="L223">		return false;</span>
+	}
+	
+
+
+	/**
+	 * Method for JavaScriptExecutor for Click() Action 
+	 * @return  WebElement Element 
+	 * 
+	 *
+	 * @Kiran JavaScriptExecutor for Click() Action  
+	 * @return - true/false
+	 */
+
+	public boolean JavascriptExe(WebDriver driver, WebElement ele) 
+	{
+<span class="nc" id="L239">	boolean flag=false;</span>
+	try{
+	
+<span class="nc" id="L242">		JavascriptExecutor js = (JavascriptExecutor) driver;</span>
+<span class="nc" id="L243">		js.executeScript(&quot;arguments[0].click();&quot;, ele);</span>
+<span class="nc" id="L244">		flag=true;</span>
+		
+<span class="nc" id="L246">	}catch(Exception e)</span>
+	
+	{
+<span class="nc" id="L249">		System.out.println(&quot;Element Not Fount&quot;);</span>
+<span class="nc" id="L250">		flag=false;</span>
+	}finally
+	
+	{
+<span class="nc bnc" id="L254" title="All 2 branches missed.">		if(flag) </span>
+			
+		{
+<span class="nc" id="L257">			System.out.println(&quot;Succssfully performed Click action&quot;);</span>
+		}else 
+		{
+<span class="nc" id="L260">			System.out.println(&quot;Unable to performed Click action&quot;);</span>
+		}
+		
+	}
+<span class="nc" id="L264">	return false;</span>
+	
+	}
+
+
+	
+
+	/**
+	 * Method for Synchronization and Wait Statement  
+	 * @return  Time in second 
+	 * 
+	 *
+	 * @Kiran implicitWait ExplicitWait and PageLoadTime 
+	 * @return - Time in second 
+	 */
+	
+	public void implicitWait(WebDriver driver, int timeOut) 
+	{
+<span class="nc" id="L282">		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeOut));</span>
+<span class="nc" id="L283">	}</span>
+		
+
+	public void explicitWait(WebDriver driver, WebElement element, Duration timeOut) 
+	{
+<span class="nc" id="L288">	    WebDriverWait wait = new WebDriverWait(driver, timeOut);</span>
+<span class="nc" id="L289">	    wait.until(ExpectedConditions.visibilityOf(element));    </span>
+<span class="nc" id="L290">	}</span>
+
+	
+	public void pageLoadTimeOut(WebDriver driver, int timeOut) 
+	
+	{
+<span class="nc" id="L296">		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(timeOut));</span>
+<span class="nc" id="L297">	}</span>
+
+
+	
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>
