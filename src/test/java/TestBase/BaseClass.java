@@ -137,7 +137,7 @@ public class BaseClass {
 			}
 			//return destfile;
 			
-			String newImageString = "http://localhost:8089/job/MyStoreProject/ws/MyStoreProject/ScreenShots/" + Tname + "_"
+			String newImageString = "http://localhost:8089/job/OpenCart_HybridFrmawork/ws/Screenshoot/" + Tname + "_"
 					+ TimeStamp + ".png";
 			return newImageString;
 					
