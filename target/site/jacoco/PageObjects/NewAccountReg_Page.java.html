@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>NewAccountReg_Page.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">OpenCartProject</a> &gt; <a href="index.source.html" class="el_package">PageObjects</a> &gt; <span class="el_source">NewAccountReg_Page.java</span></div><h1>NewAccountReg_Page.java</h1><pre class="source lang-java linenums">/**
+ * 
+ */
+package PageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import ActionClass.Action_Class;
+
+
+
+/**
+ * @author kpkmt942
+ *
+ */
+public class NewAccountReg_Page extends BasePage{
+
+<span class="nc" id="L20">	Action_Class act=new Action_Class();</span>
+	public NewAccountReg_Page(WebDriver driver) {
+<span class="nc" id="L22">		super(driver);</span>
+		
+	
+<span class="nc" id="L25">	}</span>
+	
+	@FindBy(name=&quot;firstname&quot;)
+	WebElement First_name;
+	
+	@FindBy(name=&quot;lastname&quot;)
+	WebElement Last_Name;
+	
+	@FindBy(id=&quot;input-email&quot;)
+	WebElement Email_Fild;
+	
+//	@FindBy(name=&quot;telephone&quot;)
+//	WebElement Tel_no;
+//	
+	@FindBy(name=&quot;password&quot;)
+	WebElement Password_fild;
+	
+//	@FindBy(name=&quot;confirm&quot;)
+//	WebElement confPassword_fild;
+	
+
+	@FindBy(name=&quot;//input[@name='agree']&quot;)
+	WebElement CheckBox;
+	
+	@FindBy(xpath=&quot;//input[@value=\&quot;Continue\&quot;]&quot;)
+	WebElement Click_continue;	
+	
+	@FindBy(xpath=&quot;//button[@type='submit']&quot;)
+	WebElement Conf_msg;	
+	
+	public HomePage SetUpNewReg(String fname, String Lname, String Email, String Psw) throws InterruptedException
+	{
+<span class="nc" id="L57">		act.TextSend(First_name, fname);</span>
+<span class="nc" id="L58">		act.TextSend(Last_Name, Lname);</span>
+<span class="nc" id="L59">		act.TextSend(Email_Fild, Email);</span>
+<span class="nc" id="L60">		act.TextSend(Password_fild,Psw );</span>
+<span class="nc" id="L61">		act.Click(driver, CheckBox);</span>
+<span class="nc" id="L62">		act.Click(driver, Click_continue);</span>
+		
+<span class="nc" id="L64">		return new HomePage(driver);</span>
+		
+	}
+	
+	public String Get_Confration_msg()
+	{
+<span class="nc" id="L70">		return act.GetText(driver, Conf_msg);</span>
+			
+	}
+			
+
+		
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

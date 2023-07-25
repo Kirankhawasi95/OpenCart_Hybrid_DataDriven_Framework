@@ -1,0 +1,6 @@
+projectKey=habryddata_driven
+serverUrl=http://localhost:9000
+serverVersion=10.1.0.73491
+dashboardUrl=http://localhost:9000/dashboard?id=habryddata_driven
+ceTaskId=AYmMj8Zkg8-yJ12P59rd
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYmMj8Zkg8-yJ12P59rd

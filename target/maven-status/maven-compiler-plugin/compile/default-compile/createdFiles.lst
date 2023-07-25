@@ -1,0 +1,10 @@
+PageObjects\HomePage.class
+PageObjects\ShopingCartPage.class
+PageObjects\IndexPage.class
+PageObjects\WishListPage.class
+PageObjects\ProductSearchPage.class
+ActionClass\Action_Class.class
+PageObjects\BasePage.class
+PageObjects\NewAccountReg_Page.class
+PageObjects\LogIn_Page.class
+PageObjects\CheckOutPage.class

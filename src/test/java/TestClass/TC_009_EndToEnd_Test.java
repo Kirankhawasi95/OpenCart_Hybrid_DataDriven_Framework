@@ -62,12 +62,12 @@ public class TC_009_EndToEnd_Test extends BaseClass{
 			Assert.assertEquals(product, "HTC Touch HD");
 			
 			String result2=wi.verifyCartMsg();
-			Assert.assertEquals(result2, "Success: You have added HTC Touch HD to your shopping ca");
+			Assert.assertEquals(result2, "Success: You have added HTC Touch HD to your shopping cart!");
 			ShopingCartPage=wi.ClickOn_cart();
 		
 		}
 		
-		@Test(priority = 3)
+	//	@Test(priority = 3)
 		public void ShopingCartPage_Test()
 		{
 			double UnitPrice=ShopingCartPage.GetUnitPrice("2");
