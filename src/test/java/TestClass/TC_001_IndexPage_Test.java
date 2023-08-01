@@ -23,11 +23,11 @@ public class TC_001_IndexPage_Test extends BaseClass{
 	 static ProductSearchPage ProductSearchPage;
 	 
 
-		@BeforeClass
-		public static void setUp() throws Throwable {
-			Launch_Application(null);
-			ip = new IndexPage(driver); // Initialize the indexPage object
-		}
+//		@BeforeClass
+//		public static void setUp() throws Throwable {
+//			Launch_Application();
+//			ip = new IndexPage(driver); // Initialize the indexPage object
+//		}
 	  
 		@Test(groups="Smoke",priority=1)
 		public  void LogoTest()

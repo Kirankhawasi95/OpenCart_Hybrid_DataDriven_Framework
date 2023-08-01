@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [My_Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="UtilityFile.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="ChromeBrowserTest(failed)" verbose="0">
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="TestClass.TC_009_EndToEnd_Test">
+        <methods>
+          <include name="Launch_Application"/>
+          <include name="Application_Close"/>
+          <include name="ProductSearchPage_Test"/>
+        </methods>
+      </class> <!-- TestClass.TC_009_EndToEnd_Test -->
+    </classes>
+  </test> <!-- ChromeBrowserTest(failed) -->
+</suite> <!-- Failed suite [My_Suite] -->

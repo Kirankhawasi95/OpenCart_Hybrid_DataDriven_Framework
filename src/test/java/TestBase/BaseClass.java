@@ -13,6 +13,8 @@ import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -23,7 +25,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-
 
 
 
@@ -40,6 +41,7 @@ public class BaseClass {
 	
 	public static  ResourceBundle rb;
 	
+	public static  Logger loger;
 	//static Action_Class act=new Action_Class();
 
 	
@@ -47,10 +49,12 @@ public class BaseClass {
 	
 	@Parameters({"Browser"})
 	@BeforeClass(groups={"Sanity","Smoke","Regression"})
-	public static void Launch_Application(String br) throws Throwable  
+	public  void Launch_Application(String br) throws Throwable  
 	{
 		
 	rb=ResourceBundle.getBundle("Config");
+	
+	loger=LogManager.getLogger(this.getClass());
 		
 		if(br.equals("Chrome"))
 		{
