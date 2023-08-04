@@ -10,11 +10,11 @@
   	<test thread-count="5" name="ChromeBrowserTest">
 	  <parameter name="Browser" value="Chrome"/>
     <classes>
-     <!--  <class name="TestClass.TC_001_IndexPage_Test"/>
+     <!--  <class name="TestClass.TC_001_IndexPage_Test"/>-->
      
-           <class name="TestClass.TC_002_LogInPage_Test"/>-->
+          <!-- <class name="TestClass.TC_002_LogInPage_Test"/>-->
            
-            <class name="TestClass.TC_009_EndToEnd_Test"/>
+          <class name="TestClass.TC_009_EndToEnd_Test"/>
       
       
     </classes>

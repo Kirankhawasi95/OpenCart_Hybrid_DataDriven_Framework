@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-01T12:24:11 IST" name="My_Suite" finished-at="2023-08-01T12:24:22 IST" duration-ms="11202">
+  <suite started-at="2023-08-04T10:49:48 IST" name="My_Suite" finished-at="2023-08-04T10:50:10 IST" duration-ms="21996">
     <groups>
+      <group name="Sanity">
+        <method signature="TC_002_LogInPage_Test.LogInPage_Test()[pri:-1, instance:TestClass.TC_002_LogInPage_Test@49e4c2d5]" name="LogInPage_Test" class="TestClass.TC_002_LogInPage_Test"/>
+        <method signature="TC_002_LogInPage_Test.LogInConif_Test()[pri:0, instance:TestClass.TC_002_LogInPage_Test@49e4c2d5]" name="LogInConif_Test" class="TestClass.TC_002_LogInPage_Test"/>
+      </group> <!-- Sanity -->
     </groups>
-    <test started-at="2023-08-01T12:24:11 IST" name="ChromeBrowserTest" finished-at="2023-08-01T12:24:22 IST" duration-ms="11202">
-      <class name="TestClass.TC_009_EndToEnd_Test">
-        <test-method is-config="true" signature="Launch_Application(java.lang.String)[pri:0, instance:TestClass.TC_009_EndToEnd_Test@45b15381]" started-at="2023-08-01T12:24:11 IST" name="Launch_Application" finished-at="2023-08-01T12:24:19 IST" duration-ms="7608" status="PASS">
+    <test started-at="2023-08-04T10:49:48 IST" name="ChromeBrowserTest" finished-at="2023-08-04T10:50:10 IST" duration-ms="21996">
+      <class name="TestClass.TC_002_LogInPage_Test">
+        <test-method is-config="true" signature="Launch_Application(java.lang.String)[pri:0, instance:TestClass.TC_002_LogInPage_Test@49e4c2d5]" started-at="2023-08-04T10:49:48 IST" name="Launch_Application" finished-at="2023-08-04T10:49:57 IST" duration-ms="8886" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +22,87 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Launch_Application -->
-        <test-method signature="IndexPage_Test()[pri:1, instance:TestClass.TC_009_EndToEnd_Test@45b15381]" started-at="2023-08-01T12:24:19 IST" name="IndexPage_Test" finished-at="2023-08-01T12:24:20 IST" duration-ms="790" status="PASS">
+        <test-method signature="LogInPage_Test()[pri:-1, instance:TestClass.TC_002_LogInPage_Test@49e4c2d5]" started-at="2023-08-04T10:49:57 IST" name="LogInPage_Test" description="User Successfully Login with valid creational to application" finished-at="2023-08-04T10:49:58 IST" duration-ms="1030" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- IndexPage_Test -->
-        <test-method signature="ProductSearchPage_Test()[pri:2, instance:TestClass.TC_009_EndToEnd_Test@45b15381]" started-at="2023-08-01T12:24:20 IST" name="ProductSearchPage_Test" finished-at="2023-08-01T12:24:22 IST" duration-ms="1751" status="PASS">
+        </test-method> <!-- LogInPage_Test -->
+        <test-method signature="LogInConif_Test()[pri:0, instance:TestClass.TC_002_LogInPage_Test@49e4c2d5]" started-at="2023-08-04T10:49:59 IST" name="LogInConif_Test" description="User Successfully Login with valid by test method" finished-at="2023-08-04T10:50:09 IST" duration-ms="10125" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h2[normalize-space()='My Account']"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [db9172d3c4bbafa0457f1ba2ccb41dcb, findElement {using=xpath, value=//h2[normalize-space()='My Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\kpkmt942\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57112}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57112/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: db9172d3c4bbafa0457f1ba2ccb41dcb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[normalize-space()='My Account']"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [db9172d3c4bbafa0457f1ba2ccb41dcb, findElement {using=xpath, value=//h2[normalize-space()='My Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\kpkmt942\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57112}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57112/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: db9172d3c4bbafa0457f1ba2ccb41dcb
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy16.isDisplayed(Unknown Source)
+at ActionClass.Action_Class.Isdisplayed(Action_Class.java:59)
+at PageObjects.HomePage.VerifyLogin(HomePage.java:86)
+at TestClass.TC_002_LogInPage_Test.LogInConif_Test(TC_002_LogInPage_Test.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductSearchPage_Test -->
-        <test-method is-config="true" signature="Application_Close()[pri:0, instance:TestClass.TC_009_EndToEnd_Test@45b15381]" started-at="2023-08-01T12:24:22 IST" name="Application_Close" finished-at="2023-08-01T12:24:22 IST" duration-ms="451" status="PASS">
+        </test-method> <!-- LogInConif_Test -->
+        <test-method is-config="true" signature="Application_Close()[pri:0, instance:TestClass.TC_002_LogInPage_Test@49e4c2d5]" started-at="2023-08-04T10:50:09 IST" name="Application_Close" finished-at="2023-08-04T10:50:10 IST" duration-ms="560" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Close -->
-      </class> <!-- TestClass.TC_009_EndToEnd_Test -->
+      </class> <!-- TestClass.TC_002_LogInPage_Test -->
     </test> <!-- ChromeBrowserTest -->
   </suite> <!-- My_Suite -->
 </testng-results>

@@ -72,7 +72,7 @@ public class BaseClass {
 //		pro.load(reader);
 		
 		//driver =new ChromeDriver();
-		 driver.get(rb.getString("BaseURL"));
+		 driver.get("https://demo.opencart.com/index.php");
 		 
 		 driver.manage().window().maximize();
 		 Thread.sleep(3000);

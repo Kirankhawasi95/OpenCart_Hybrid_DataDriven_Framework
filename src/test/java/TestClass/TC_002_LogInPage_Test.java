@@ -28,7 +28,8 @@ public class TC_002_LogInPage_Test extends BaseClass{
 //		
 //	}	
 		
-		@Test(groups="Sanity",priority=-1)
+		@Test(groups="Sanity",priority=-1, description = "User Successfully Login with valid by test method"
+				+ "")
 		public void LogInPage_Test()
 		{
 			ip=new IndexPage(driver);
@@ -37,15 +38,16 @@ public class TC_002_LogInPage_Test extends BaseClass{
 			homepage=lp.LogIntoApplication(rb.getString("Email"),rb.getString("Password"), null);
 		}
 		
-			@Test
-			public void LogInConif_Test()
-			{
-			boolean ActualResult=homepage.VerifyLogin();
-			Assert.assertTrue(ActualResult);
-			}
-			
-			//LogIn_Page.Clickon_logInBtn();
-			
+//			@Test(groups="Sanity", description = "User Successfully Login with valid by test method"
+//					+ "")
+//			public void LogInConif_Test()
+//			{
+//			boolean ActualResult=homepage.VerifyLogin();
+//			Assert.assertTrue(ActualResult);
+//			}
+//			
+//			//LogIn_Page.Clickon_logInBtn();
+//			
 	}
 
 

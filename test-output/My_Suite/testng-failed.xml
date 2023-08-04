@@ -12,7 +12,6 @@
           <include name="Launch_Application"/>
           <include name="Application_Close"/>
           <include name="ProductSearchPage_Test"/>
-          <include name="ShopingCartPage_Test"/>
         </methods>
       </class> <!-- TestClass.TC_009_EndToEnd_Test -->
     </classes>

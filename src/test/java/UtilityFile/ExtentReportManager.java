@@ -18,6 +18,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import TestBase.BaseClass;
+import testlink.api.java.client.TestLinkAPIClient;
 
 /**This class is use to generates the extent reports on failures and attached a screenshot to the report
  * @author kpkmt942
@@ -25,11 +26,13 @@ import TestBase.BaseClass;
  */
 public class ExtentReportManager implements ITestListener {
 	
-
+	
+	
 
 	public ExtentSparkReporter sparkReporter;  // UI of the report
 	public ExtentReports extent;  //populate common info on the report
 	public ExtentTest test; // creating test case entries in the report and update status of the test methods
+	public  TestLinkIntigration TestLinkIntigration;
 	
 	String repName;
 
@@ -65,9 +68,26 @@ public class ExtentReportManager implements ITestListener {
 		test = extent.createTest(result.getName()); // create a new entry in the report
 		test.log(Status.PASS, "Test case PASSED is:" + result.getName()); // update status p/f/s
 		
+//			try {
+//				TestLinkIntigration.UpdateResult(result.getName(), null, TestLinkAPIClient.TEST_PASSED);
+//			} catch (Throwable e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//		
+		try {
+			TestLinkIntigration.UpdateResult(result, "This test case is Executed through automation scripts and test case is passed", TestLinkAPIClient.TEST_PASSED);
+		} catch (Throwable e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
 	}
 
 	public void onTestFailure(ITestResult result) {
+		
+		
 		
 		test = extent.createTest(result.getName());
 		test.log(Status.FAIL, "Test case FAILED is:" + result.getName());
@@ -82,6 +102,14 @@ public class ExtentReportManager implements ITestListener {
 			
 			e.printStackTrace();
 		}
+		
+		try {
+			TestLinkIntigration.UpdateResult(result, "This test case is Executed through automation scripts and test case is failed", TestLinkAPIClient.TEST_FAILED);
+		} catch (Throwable e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		
 		
 					

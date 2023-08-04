@@ -9,6 +9,7 @@ TestClass\TC_007_ShopingCartPage_Test.class
 UtilityFile\DataProviders.class
 UtilityFile\ExcelUtilityFile.class
 TestBase\BaseClass.class
+UtilityFile\TestLinkIntigration.class
 TestClass\TC_0010_LogInDDT_Test.class
 TestClass\TC_002_LogInPage_Test.class
 UtilityFile\ExtentReportManager.class

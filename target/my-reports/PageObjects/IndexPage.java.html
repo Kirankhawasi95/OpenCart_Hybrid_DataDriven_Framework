@@ -52,18 +52,18 @@ public class IndexPage extends BasePage{
 	
 	public ProductSearchPage ProductSearch(String Product) //Search The Product 
     {
-<span class="fc" id="L55">		act.TextSend(SearchBox, Product);</span>
-<span class="fc" id="L56">		act.Click(driver, SeacrhBtn);</span>
-<span class="fc" id="L57">		return new ProductSearchPage(driver);</span>
+<span class="nc" id="L55">		act.TextSend(SearchBox, Product);</span>
+<span class="nc" id="L56">		act.Click(driver, SeacrhBtn);</span>
+<span class="nc" id="L57">		return new ProductSearchPage(driver);</span>
 	 
     }
  
 
 	 public void Click_MyAccount()
 	    {
-<span class="nc" id="L64">		 act.JavascriptExe(driver, MyAccount);</span>
+<span class="fc" id="L64">		 act.JavascriptExe(driver, MyAccount);</span>
 		 
-<span class="nc" id="L66">	    }</span>
+<span class="fc" id="L66">	    }</span>
 	 
 
 	    public NewAccountReg_Page Click_RegBtn()
@@ -74,20 +74,20 @@ public class IndexPage extends BasePage{
 	    
 	    public LogIn_Page ClickOn_LogIn()
 	    {
-<span class="nc" id="L77">	    	act.Click(driver, LogIn);</span>
-<span class="nc" id="L78">	    	return new LogIn_Page(driver);</span>
+<span class="fc" id="L77">	    	act.Click(driver, LogIn);</span>
+<span class="fc" id="L78">	    	return new LogIn_Page(driver);</span>
 	    }  
 	    
 	    public boolean VerifyLogo()
 	    {
-<span class="fc" id="L83">	    	return act.Isdisplayed(driver, Logo);</span>
+<span class="nc" id="L83">	    	return act.Isdisplayed(driver, Logo);</span>
 	    }  
 	    
 	    public String GetCurrentTitle()
 	    {
-<span class="fc" id="L88">	    	 String title=driver.getTitle();</span>
-<span class="fc" id="L89">	    	 System.out.println(title);</span>
-<span class="fc" id="L90">	     return title;</span>
+<span class="nc" id="L88">	    	 String title=driver.getTitle();</span>
+<span class="nc" id="L89">	    	 System.out.println(title);</span>
+<span class="nc" id="L90">	     return title;</span>
 	    }
 	    
 	    

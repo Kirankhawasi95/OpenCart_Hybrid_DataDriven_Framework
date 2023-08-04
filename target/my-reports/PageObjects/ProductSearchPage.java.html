@@ -18,9 +18,9 @@ public class ProductSearchPage extends BasePage{
 	
 	
 	public ProductSearchPage(WebDriver driver) {
-<span class="fc" id="L21">		super(driver);</span>
+<span class="nc" id="L21">		super(driver);</span>
 		
-<span class="fc" id="L23">	}</span>
+<span class="nc" id="L23">	}</span>
 	
 	@FindBy (xpath=&quot;//button[@aria-label='Add to Wish List']&quot;)
 	WebElement AddTo_WishList;
@@ -53,8 +53,8 @@ public class ProductSearchPage extends BasePage{
 	
 	public LogIn_Page ClickOn_Wishlist2()
 	{
-<span class="fc" id="L56">		act.JavascriptExe(driver, WishList);</span>
-<span class="fc" id="L57">		return new LogIn_Page(driver);</span>
+<span class="nc" id="L56">		act.JavascriptExe(driver, WishList);</span>
+<span class="nc" id="L57">		return new LogIn_Page(driver);</span>
 		
 	}
 	

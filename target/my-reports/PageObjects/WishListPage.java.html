@@ -19,9 +19,9 @@ public class WishListPage extends BasePage{
 
 	
 	public WishListPage(WebDriver driver) {
-<span class="fc" id="L22">		super(driver);</span>
+<span class="nc" id="L22">		super(driver);</span>
 		
-<span class="fc" id="L24">	}</span>
+<span class="nc" id="L24">	}</span>
 	
 	
 	
@@ -51,25 +51,25 @@ public class WishListPage extends BasePage{
 	
 	public String VerifySameProduct()
 	{
-<span class="fc" id="L54">		  String Result=ProductResult.getText();</span>
-<span class="fc" id="L55">		  System.out.println(&quot;the added product is matched and product Name is:&quot;+Result);</span>
-<span class="fc" id="L56">		  act.Click(driver, AddToCart);</span>
-<span class="fc" id="L57">		  return Result;	  </span>
+<span class="nc" id="L54">		  String Result=ProductResult.getText();</span>
+<span class="nc" id="L55">		  System.out.println(&quot;the added product is matched and product Name is:&quot;+Result);</span>
+<span class="nc" id="L56">		  act.Click(driver, AddToCart);</span>
+<span class="nc" id="L57">		  return Result;	  </span>
 	}
 	 
 	public String verifyCartMsg () 
 	{
-<span class="fc" id="L62">		String CartConfiromationMsg=act.GetText(driver, GetMsg); </span>
-<span class="fc" id="L63">		act.JavascriptExe(driver, Gotocart);		</span>
-<span class="fc" id="L64">		return CartConfiromationMsg;	</span>
+<span class="nc" id="L62">		String CartConfiromationMsg=act.GetText(driver, GetMsg); </span>
+<span class="nc" id="L63">		act.JavascriptExe(driver, Gotocart);		</span>
+<span class="nc" id="L64">		return CartConfiromationMsg;	</span>
 	}
 	
 	
 	public ShopingCartPage ClickOn_cart () 
 	{
 		
-<span class="fc" id="L71">		act.JavascriptExe(driver, Gotocart);		</span>
-<span class="fc" id="L72">		return new ShopingCartPage(driver);</span>
+<span class="nc" id="L71">		act.JavascriptExe(driver, Gotocart);		</span>
+<span class="nc" id="L72">		return new ShopingCartPage(driver);</span>
 	}
 
 

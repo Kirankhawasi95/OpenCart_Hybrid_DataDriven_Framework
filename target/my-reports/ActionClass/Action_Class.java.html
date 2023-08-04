@@ -56,19 +56,19 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 		
 <span class="fc" id="L57">		boolean flag =false;</span>
 		
-<span class="fc" id="L59">		ele.isDisplayed();</span>
-<span class="fc" id="L60">		flag = true;</span>
+<span class="nc" id="L59">		ele.isDisplayed();</span>
+<span class="nc" id="L60">		flag = true;</span>
 		
-<span class="pc bpc" id="L62" title="1 of 2 branches missed.">		if(flag)</span>
+<span class="nc bnc" id="L62" title="All 2 branches missed.">		if(flag)</span>
 		{
-<span class="fc" id="L64">			System.out.println(&quot;Successfully Found And Element is displayed at&quot;);</span>
-<span class="fc" id="L65">		}</span>
+<span class="nc" id="L64">			System.out.println(&quot;Successfully Found And Element is displayed at&quot;);</span>
+		}
 		
 		else
 		{
 <span class="nc" id="L69">			System.out.println(&quot;Successfully Found Element But Element is not displayed at&quot;);</span>
 		}
-<span class="fc" id="L71">		return flag;</span>
+<span class="nc" id="L71">		return flag;</span>
 		}
 	
 	//Method for to check Radio button is Enable or not
@@ -83,7 +83,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 <span class="nc bnc" id="L83" title="All 2 branches missed.">		if(flag)</span>
 		{
 <span class="nc" id="L85">			System.out.println(&quot;Successfully Found And Element is displayed at&quot;);</span>
-<span class="nc" id="L86">		}</span>
+		}
 		
 		else
 		{
@@ -104,7 +104,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 <span class="nc bnc" id="L104" title="All 2 branches missed.">		if(flag)</span>
 		{
 <span class="nc" id="L106">			System.out.println(&quot;Successfully Found And Element is displayed at&quot;);</span>
-<span class="nc" id="L107">		}</span>
+		}
 		
 		else
 		{
@@ -133,7 +133,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 <span class="fc" id="L133">			ele.sendKeys(text);	</span>
 <span class="fc" id="L134">			flag=true;</span>
 			
-<span class="pc" id="L136">		}catch(Exception e)</span>
+<span class="nc" id="L136">		}catch(Exception e)</span>
 		
 		{
 <span class="nc" id="L139">			System.out.println(&quot;Location Not Found&quot;);</span>
@@ -144,7 +144,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 <span class="pc bpc" id="L144" title="1 of 2 branches missed.">			if(flag)</span>
 			{
 <span class="fc" id="L146">				System.out.println(&quot;Successfully entered Text in the Search Fild&quot;);</span>
-<span class="fc" id="L147">			}else {</span>
+			}else {
 <span class="nc" id="L148">				System.out.println(&quot;Unable to enter Text in the Search Fild&quot;);</span>
 			}
 
@@ -166,22 +166,22 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 	public String GetText(WebDriver driver, WebElement ele)
 	{
 		
-<span class="fc" id="L169">		boolean flag = false;</span>
+<span class="nc" id="L169">		boolean flag = false;</span>
 			
-<span class="fc" id="L171">			String text=ele.getText();</span>
-<span class="fc" id="L172">			System.out.println(text);</span>
-<span class="fc" id="L173">			flag=true;</span>
+<span class="nc" id="L171">			String text=ele.getText();</span>
+<span class="nc" id="L172">			System.out.println(text);</span>
+<span class="nc" id="L173">			flag=true;</span>
 			
-<span class="pc bpc" id="L175" title="1 of 2 branches missed.">			if(flag)</span>
+<span class="nc bnc" id="L175" title="All 2 branches missed.">			if(flag)</span>
 			{
-<span class="fc" id="L177">				System.out.println(&quot;Successfully Found a displayed Text&quot;);</span>
-<span class="fc" id="L178">			}else</span>
+<span class="nc" id="L177">				System.out.println(&quot;Successfully Found a displayed Text&quot;);</span>
+			}else
 				
 			{
 <span class="nc" id="L181">				System.out.println(&quot;Text not Found&quot;);</span>
 			}
 			
-<span class="fc" id="L184">		return text;</span>
+<span class="nc" id="L184">		return text;</span>
 	}
 
 
@@ -214,7 +214,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 <span class="nc bnc" id="L214" title="All 2 branches missed.">			if(flag) </span>
 			{
 <span class="nc" id="L216">				System.out.println(&quot;Successfully selected index a value&quot;);</span>
-<span class="nc" id="L217">			}else</span>
+			}else
 			{
 <span class="nc" id="L219">				System.out.println(&quot;Unable to get the index value&quot;);</span>
 			}
@@ -243,21 +243,21 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 <span class="fc" id="L243">		js.executeScript(&quot;arguments[0].click();&quot;, ele);</span>
 <span class="fc" id="L244">		flag=true;</span>
 		
-<span class="pc" id="L246">	}catch(Exception e)</span>
+<span class="fc" id="L246">	}catch(Exception e)</span>
 	
 	{
-<span class="nc" id="L249">		System.out.println(&quot;Element Not Fount&quot;);</span>
-<span class="nc" id="L250">		flag=false;</span>
+<span class="fc" id="L249">		System.out.println(&quot;Element Not Fount&quot;);</span>
+<span class="fc" id="L250">		flag=false;</span>
 	}finally
 	
 	{
-<span class="pc bpc" id="L254" title="1 of 2 branches missed.">		if(flag) </span>
+<span class="fc bfc" id="L254" title="All 2 branches covered.">		if(flag) </span>
 			
 		{
 <span class="fc" id="L257">			System.out.println(&quot;Succssfully performed Click action&quot;);</span>
-<span class="fc" id="L258">		}else </span>
+		}else 
 		{
-<span class="nc" id="L260">			System.out.println(&quot;Unable to performed Click action&quot;);</span>
+<span class="fc" id="L260">			System.out.println(&quot;Unable to performed Click action&quot;);</span>
 		}
 		
 	}
