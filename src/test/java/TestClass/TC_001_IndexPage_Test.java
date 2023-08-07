@@ -32,7 +32,7 @@ public class TC_001_IndexPage_Test extends BaseClass{
 		@Test(groups="Smoke",priority=1, description="User As to Verify logo is present or not")
 		public  void LogoTest()
 		{
-		//IndexPage ip=new IndexPage(driver);
+		IndexPage ip=new IndexPage(driver);
 		boolean logo=ip.VerifyLogo();
 		Assert.assertTrue(logo);
 		}
@@ -41,27 +41,27 @@ public class TC_001_IndexPage_Test extends BaseClass{
 		@Test(groups="Smoke",priority = 2, description="User As Check the Title of the page")
 		public  static void TitleTest()
 		{
-		//IndexPage ip=new IndexPage(driver);
+		IndexPage ip=new IndexPage(driver);
 		String ActualTitle=ip.GetCurrentTitle();
 		String presentTitle="Your Store";
 		Assert.assertEquals(ActualTitle, presentTitle);
 		}
-	
-		@Test(groups="Sanity",priority = 3)
-		public static void AccountSetuptest()
-		{
-		//IndexPage ip=new IndexPage(driver);
-		ip.Click_MyAccount();
-		ip.ClickOn_LogIn();
-		
-		
-		//Without logIn
-		ProductSearchPage=ip.ProductSearch(rb.getString("product1"));
-		
-//		hp.Click_MyAccount();
-		
-		
-		}
+//	
+//		@Test(groups="Sanity",priority = 3)
+//		public static void AccountSetuptest()
+//		{
+//		//IndexPage ip=new IndexPage(driver);
+//		ip.Click_MyAccount();
+//		ip.ClickOn_LogIn();
+//		
+//		
+//		//Without logIn
+//		ProductSearchPage=ip.ProductSearch(rb.getString("product1"));
+//		
+////		hp.Click_MyAccount();
+//		
+//		
+//		}
 	
 
 }

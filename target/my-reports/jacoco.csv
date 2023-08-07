@@ -3,9 +3,9 @@ OpenCartProject,PageObjects,WishListPage,50,0,0,0,11,0,4,0,4,0
 OpenCartProject,PageObjects,ProductSearchPage,34,0,0,0,8,0,4,0,4,0
 OpenCartProject,PageObjects,CheckOutPage,119,0,0,0,23,0,5,0,5,0
 OpenCartProject,PageObjects,ShopingCartPage,76,0,0,0,16,0,4,0,4,0
-OpenCartProject,PageObjects,HomePage,62,4,2,0,17,2,5,1,4,1
+OpenCartProject,PageObjects,HomePage,47,19,2,0,13,6,3,3,2,3
 OpenCartProject,PageObjects,BasePage,0,13,0,0,0,5,0,2,0,2
 OpenCartProject,PageObjects,LogIn_Page,26,35,0,0,4,7,1,2,1,2
 OpenCartProject,PageObjects,NewAccountReg_Page,61,0,0,0,11,0,3,0,3,0
-OpenCartProject,PageObjects,IndexPage,40,21,0,0,9,6,4,3,4,3
-OpenCartProject,ActionClass,Action_Class,141,75,11,3,50,24,13,6,7,5
+OpenCartProject,PageObjects,IndexPage,26,35,0,0,5,10,2,5,2,5
+OpenCartProject,ActionClass,Action_Class,128,88,10,4,45,29,13,6,7,5

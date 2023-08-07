@@ -51,7 +51,7 @@ public class TC_002_LogInPage_Test extends BaseClass{
 				ip=new IndexPage(driver);
 				ip.Click_MyAccount();
 				lp=ip.ClickOn_LogIn();
-				homepage=lp.LogIntoApplication(rb.getString("Email"),rb.getString("Password"), null);
+				homepage=lp.LogIntoApplication(rb.getString("Email"),rb.getString("Password1"), null);
 				
 				boolean ActualResult=homepage.VerifyLogin();
 				
