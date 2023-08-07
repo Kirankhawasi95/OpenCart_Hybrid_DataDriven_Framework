@@ -28,7 +28,7 @@ public class TC_002_LogInPage_Test extends BaseClass{
 //		
 //	}	
 		
-		@Test(groups="Sanity",priority=-1, description = "User Successfully Login with valid by test method"
+		@Test(groups="Sanity",priority=-1, description = "User Successfully Login with valid creational"
 				+ "")
 		public void LogInPage_Test()
 		{
@@ -36,18 +36,42 @@ public class TC_002_LogInPage_Test extends BaseClass{
 			ip.Click_MyAccount();
 			lp=ip.ClickOn_LogIn();
 			homepage=lp.LogIntoApplication(rb.getString("Email"),rb.getString("Password"), null);
+			boolean ActualResult=homepage.VerifyLogin();
+			Assert.assertTrue(ActualResult);
+			homepage.Clickon_LogOut();
 		}
 		
-//			@Test(groups="Sanity", description = "User Successfully Login with valid by test method"
-//					+ "")
-//			public void LogInConif_Test()
-//			{
-//			boolean ActualResult=homepage.VerifyLogin();
-//			Assert.assertTrue(ActualResult);
-//			}
-//			
-//			//LogIn_Page.Clickon_logInBtn();
-//			
+			@Test(groups="Sanity", priority=1, description = "User Login with invalid creational"
+					+ "")
+			public void LogInTest2()
+			{
+				ip=new IndexPage(driver);
+				ip.Click_MyAccount();
+				lp=ip.ClickOn_LogIn();
+				homepage=lp.LogIntoApplication(rb.getString("Email"),rb.getString("Password1"), null);
+				boolean ActualResult=homepage.VerifyLogin();
+				if(ActualResult=true)
+				{
+					
+					Assert.assertTrue(true);
+					System.out.println("test failed");
+					
+					
+				}else
+				{
+
+					
+					System.out.println("test pass");
+					Assert.assertTrue(false);
+				}
+					
+				
+				
+			}
+			
+			
+			
+			
 	}
 
 

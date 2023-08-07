@@ -13,13 +13,13 @@ public class TestLinkIntigration {
 	
 	
 	
-	public static  final String APIKey="0209c0b7b3dabfeb57b68a69d8411dff";
+
+	public static  final String APIKey="85c0cc560f288c468d38c8b8c671cac8";
 	public static  final String TestLink_URL="http://127.0.0.1/testlink/lib/api/xmlrpc/v1/xmlrpc.php";
-	public static  final String TestPrpjrct_Name="OpenCartDemoProject";
-	public static  final String TestPlan_Name="New test plan";
+	public static  final String TestPrpjrct_Name="OpenCart Hybrid  Project";
+	public static  final String TestPlan_Name="OpenCart Test Plan";
 	//public static  final String TestCase_Name="User Successfully Login with valid creational";
-	public static  final String Build_Name="Version 3";
-	
+	public static  final String Build_Name="Build Version 01";
 	//private static final TestLinkManager TestLinkManager=new TestLinkManager();
 	
 	

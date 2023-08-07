@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-My_Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-My_Suite" title="TestClass.TC_002_LogInPage_Test" class="method navigator-link" hash-for-method="LogInConif_Test">LogInConif_Test</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-My_Suite" title="TestClass.TC_002_LogInPage_Test" class="method navigator-link" hash-for-method="LogInPage_Test">LogInPage_Test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-My_Suite -->
@@ -117,7 +117,7 @@
                     <div class="method-list-content passed suite-My_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-My_Suite" title="TestClass.TC_002_LogInPage_Test" class="method navigator-link" hash-for-method="LogInPage_Test">LogInPage_Test</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-My_Suite" title="TestClass.TC_002_LogInPage_Test" class="method navigator-link" hash-for-method="LogInTest2">LogInTest2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-My_Suite -->
@@ -140,18 +140,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LogInConif_Test">
-                  </a> <!-- LogInConif_Test -->
-                  <span class="method-name">LogInConif_Test</span>
+                  <a name="LogInPage_Test">
+                  </a> <!-- LogInPage_Test -->
+                  <span class="method-name">LogInPage_Test</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[normalize-space()=&apos;My Account&apos;]&quot;}
-  (Session info: chrome=115.0.5790.110)
+  (Session info: chrome=115.0.5790.111)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db9172d3c4bbafa0457f1ba2ccb41dcb, findElement {using=xpath, value=//h2[normalize-space()=&apos;My Account&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\kpkmt942\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57112}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57112/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: db9172d3c4bbafa0457f1ba2ccb41dcb
+Command: [33278ca6ab07e360469bf818153d6ffd, findElement {using=xpath, value=//h2[normalize-space()=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\kpkmt942\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62201}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62201/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 33278ca6ab07e360469bf818153d6ffd
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -168,7 +168,7 @@ Session ID: db9172d3c4bbafa0457f1ba2ccb41dcb
 	at com.sun.proxy.$Proxy16.isDisplayed(Unknown Source)
 	at ActionClass.Action_Class.Isdisplayed(Action_Class.java:59)
 	at PageObjects.HomePage.VerifyLogin(HomePage.java:86)
-	at TestClass.TC_002_LogInPage_Test.LogInConif_Test(TC_002_LogInPage_Test.java:45)
+	at TestClass.TC_002_LogInPage_Test.LogInPage_Test(TC_002_LogInPage_Test.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
@@ -177,7 +177,7 @@ Session ID: db9172d3c4bbafa0457f1ba2ccb41dcb
 ... Removed 21 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(User Successfully Login with valid by test method)                  </em>
+(User Successfully Login with valid creational)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -190,11 +190,11 @@ Session ID: db9172d3c4bbafa0457f1ba2ccb41dcb
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LogInPage_Test">
-                  </a> <!-- LogInPage_Test -->
-                  <span class="method-name">LogInPage_Test</span>
+                  <a name="LogInTest2">
+                  </a> <!-- LogInTest2 -->
+                  <span class="method-name">LogInTest2</span>
                   <em>
-(User Successfully Login with valid creational to application)                  </em>
+(User Login with invalid creational)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -243,11 +243,11 @@ Session ID: db9172d3c4bbafa0457f1ba2ccb41dcb
               <span class="test-group-name">Sanity</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">LogInConif_Test</span>
+                <span class="method-in-group-name">LogInPage_Test</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">LogInPage_Test</span>
+                <span class="method-in-group-name">LogInTest2</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -269,13 +269,13 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LogInConif_Test')
+data.setCell(0, 1, 'LogInPage_Test')
 data.setCell(0, 2, 'TestClass.TC_002_LogInPage_Test')
-data.setCell(0, 3, 10125);
+data.setCell(0, 3, 11095);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LogInPage_Test')
+data.setCell(1, 1, 'LogInTest2')
 data.setCell(1, 2, 'TestClass.TC_002_LogInPage_Test')
-data.setCell(1, 3, 1030);
+data.setCell(1, 3, 1486);
 window.suiteTableData['My_Suite']= { tableData: data, tableDiv: 'times-div-My_Suite'}
 return data;
 }
@@ -312,18 +312,18 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">LogInPage_Test</span>
-                <span class="method-start">8903 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">LogInConif_Test</span>
-                <span class="method-start">10285 ms</span>
+                <span class="method-name">LogInPage_Test</span>
+                <span class="method-start">7494 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LogInTest2</span>
+                <span class="method-start">19079 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">Application_Close</span>
-                <span class="method-start">20808 ms</span>
+                <span class="method-start">20787 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

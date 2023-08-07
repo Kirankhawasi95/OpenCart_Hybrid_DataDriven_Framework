@@ -9,9 +9,9 @@
     <classes>
       <class name="TestClass.TC_002_LogInPage_Test">
         <methods>
+          <include name="LogInPage_Test"/>
           <include name="Launch_Application"/>
           <include name="Application_Close"/>
-          <include name="LogInConif_Test"/>
         </methods>
       </class> <!-- TestClass.TC_002_LogInPage_Test -->
     </classes>
