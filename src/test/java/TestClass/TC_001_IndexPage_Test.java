@@ -43,7 +43,7 @@ public class TC_001_IndexPage_Test extends BaseClass{
 		{
 		IndexPage ip=new IndexPage(driver);
 		String ActualTitle=ip.GetCurrentTitle();
-		String presentTitle="Your Store";
+		String presentTitle="Your Sto";
 		Assert.assertEquals(ActualTitle, presentTitle);
 		}
 //	
