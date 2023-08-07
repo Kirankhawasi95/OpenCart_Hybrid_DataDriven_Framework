@@ -13,6 +13,8 @@
      <!--  <class name="TestClass.TC_001_IndexPage_Test"/>-->
      
           <class name="TestClass.TC_002_LogInPage_Test"/>
+          
+          <!-- <class name="TestClass.TC_0010_LogInDDT_Test"/>-->
            
           <!--<class name="TestClass.TC_009_EndToEnd_Test"/>-->
       

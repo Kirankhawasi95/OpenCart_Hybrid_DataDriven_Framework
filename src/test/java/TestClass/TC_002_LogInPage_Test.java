@@ -6,6 +6,7 @@ package TestClass;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import PageObjects.HomePage;
 import PageObjects.IndexPage;
@@ -21,6 +22,8 @@ public class TC_002_LogInPage_Test extends BaseClass{
 	IndexPage ip;
 	LogIn_Page lp;
 	HomePage homepage;
+	
+	SoftAssert soft=new SoftAssert();
 //	
 //	@Test
 //	public void LogInPage_Test() throws InterruptedException
@@ -48,20 +51,24 @@ public class TC_002_LogInPage_Test extends BaseClass{
 				ip=new IndexPage(driver);
 				ip.Click_MyAccount();
 				lp=ip.ClickOn_LogIn();
-				homepage=lp.LogIntoApplication(rb.getString("Email"),rb.getString("Password1"), null);
+				homepage=lp.LogIntoApplication(rb.getString("Email"),rb.getString("Password"), null);
+				
 				boolean ActualResult=homepage.VerifyLogin();
-				if(ActualResult=true)
+				
+				if(ActualResult==true)
 				{
 					
 					Assert.assertTrue(true);
-					System.out.println("test failed");
+					homepage.Clickon_LogOut();
+					
+					System.out.println("test case is pass");
 					
 					
 				}else
 				{
 
 					
-					System.out.println("test pass");
+					System.out.println("test case is fail");
 					Assert.assertTrue(false);
 				}
 					
