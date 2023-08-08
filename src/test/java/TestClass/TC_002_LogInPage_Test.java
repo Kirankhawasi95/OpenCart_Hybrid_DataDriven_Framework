@@ -12,6 +12,7 @@ import PageObjects.HomePage;
 import PageObjects.IndexPage;
 import PageObjects.LogIn_Page;
 import TestBase.BaseClass;
+import UtilityFile.JiraPolicy;
 
 /**
  * @author kpkmt942
@@ -44,6 +45,9 @@ public class TC_002_LogInPage_Test extends BaseClass{
 			homepage.Clickon_LogOut();
 		}
 		
+		
+		
+			@JiraPolicy(logTicketReady=true)
 			@Test(groups="Sanity", priority=1, description = "User Login with invalid creational"
 					+ "")
 			public void LogInTest2()

@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import PageObjects.IndexPage;
 import PageObjects.ProductSearchPage;
 import TestBase.BaseClass;
+import UtilityFile.JiraPolicy;
 
 
 /**
@@ -28,6 +29,7 @@ public class TC_001_IndexPage_Test extends BaseClass{
 //			Launch_Application();
 //			ip = new IndexPage(driver); // Initialize the indexPage object
 //		}
+	 
 	  
 		@Test(groups="Smoke",priority=1, description="User As to Verify logo is present or not")
 		public  void LogoTest()
@@ -37,7 +39,7 @@ public class TC_001_IndexPage_Test extends BaseClass{
 		Assert.assertTrue(logo);
 		}
 		
-		
+		@JiraPolicy(logTicketReady=true)
 		@Test(groups="Smoke",priority = 2, description="User As Check the Title of the page")
 		public  static void TitleTest()
 		{

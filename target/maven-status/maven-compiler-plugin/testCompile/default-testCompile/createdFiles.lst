@@ -1,4 +1,5 @@
 TestClass\TC_004_HomePage_Test.class
+UtilityFile\JiraPolicy.class
 TestClass\TC_003_AccountReg_Test.class
 TestClass\TC_008_CheckOutPage_Test.class
 TestClass\TC_009_EndToEnd_Test.class
@@ -9,6 +10,7 @@ TestClass\TC_007_ShopingCartPage_Test.class
 UtilityFile\DataProviders.class
 UtilityFile\ExcelUtilityFile.class
 TestBase\BaseClass.class
+UtilityFile\JiraServiceProvider.class
 UtilityFile\TestLinkIntigration.class
 TestClass\TC_0010_LogInDDT_Test.class
 TestClass\TC_002_LogInPage_Test.class

@@ -19,7 +19,7 @@ public class TestLinkIntigration {
 	public static  final String TestPrpjrct_Name="OpenCart Hybrid  Project";
 	public static  final String TestPlan_Name="OpenCart Test Plan";
 	//public static  final String TestCase_Name="User Successfully Login with valid creational";
-	public static  final String Build_Name="Build Version 01";
+	public static  final String Build_Name="Build Version 02";
 	//private static final TestLinkManager TestLinkManager=new TestLinkManager();
 	
 	
