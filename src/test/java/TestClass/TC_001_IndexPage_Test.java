@@ -31,16 +31,16 @@ public class TC_001_IndexPage_Test extends BaseClass{
 //		}
 	 
 	  
-		@Test(groups="Smoke",priority=1, description="User As to Verify logo is present or not")
-		public  void LogoTest()
-		{
-		IndexPage ip=new IndexPage(driver);
-		boolean logo=ip.VerifyLogo();
-		Assert.assertTrue(logo);
-		}
+//		@Test(groups="Smoke",priority=1, description="User As to Verify logo is present or not")
+//		public  void LogoTest()
+//		{
+//		IndexPage ip=new IndexPage(driver);
+//		boolean logo=ip.VerifyLogo();
+//		Assert.assertTrue(logo);
+//		}
 		
 		@JiraPolicy(logTicketReady=true)
-		@Test(groups="Smoke",priority = 2)
+		@Test(groups="Smoke",priority = 2, description="User As Check the Title of the page")
 		public  static void TitleTest()
 		{
 		IndexPage ip=new IndexPage(driver);

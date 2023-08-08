@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-08T14:51:00 IST" name="My_Suite" finished-at="2023-08-08T14:51:42 IST" duration-ms="42122">
+  <suite started-at="2023-08-08T15:18:32 IST" name="My_Suite" finished-at="2023-08-08T15:19:12 IST" duration-ms="39698">
     <groups>
       <group name="Sanity">
-        <method signature="TC_002_LogInPage_Test.LogInPage_Test()[pri:-1, instance:TestClass.TC_002_LogInPage_Test@14c93774]" name="LogInPage_Test" class="TestClass.TC_002_LogInPage_Test"/>
-        <method signature="TC_002_LogInPage_Test.LogInTest2()[pri:1, instance:TestClass.TC_002_LogInPage_Test@14c93774]" name="LogInTest2" class="TestClass.TC_002_LogInPage_Test"/>
+        <method signature="TC_002_LogInPage_Test.LogInPage_Test()[pri:-1, instance:TestClass.TC_002_LogInPage_Test@315105f]" name="LogInPage_Test" class="TestClass.TC_002_LogInPage_Test"/>
+        <method signature="TC_002_LogInPage_Test.LogInTest2()[pri:1, instance:TestClass.TC_002_LogInPage_Test@315105f]" name="LogInTest2" class="TestClass.TC_002_LogInPage_Test"/>
       </group> <!-- Sanity -->
       <group name="Smoke">
-        <method signature="TC_001_IndexPage_Test.LogoTest()[pri:1, instance:TestClass.TC_001_IndexPage_Test@33379242]" name="LogoTest" class="TestClass.TC_001_IndexPage_Test"/>
-        <method signature="TC_001_IndexPage_Test.TitleTest()[pri:2, instance:TestClass.TC_001_IndexPage_Test@33379242]" name="TitleTest" class="TestClass.TC_001_IndexPage_Test"/>
+        <method signature="TC_001_IndexPage_Test.TitleTest()[pri:2, instance:TestClass.TC_001_IndexPage_Test@5b5ac798]" name="TitleTest" class="TestClass.TC_001_IndexPage_Test"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-08-08T14:51:00 IST" name="ChromeBrowserTest" finished-at="2023-08-08T14:51:42 IST" duration-ms="42122">
+    <test started-at="2023-08-08T15:18:32 IST" name="ChromeBrowserTest" finished-at="2023-08-08T15:19:12 IST" duration-ms="39698">
       <class name="TestClass.TC_002_LogInPage_Test">
-        <test-method is-config="true" signature="Launch_Application(java.lang.String)[pri:0, instance:TestClass.TC_002_LogInPage_Test@14c93774]" started-at="2023-08-08T14:51:01 IST" name="Launch_Application" finished-at="2023-08-08T14:51:11 IST" duration-ms="9841" status="PASS">
+        <test-method is-config="true" signature="Launch_Application(java.lang.String)[pri:0, instance:TestClass.TC_002_LogInPage_Test@315105f]" started-at="2023-08-08T15:18:33 IST" name="Launch_Application" finished-at="2023-08-08T15:18:42 IST" duration-ms="9938" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,11 +25,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Launch_Application -->
-        <test-method signature="LogInPage_Test()[pri:-1, instance:TestClass.TC_002_LogInPage_Test@14c93774]" started-at="2023-08-08T14:51:11 IST" name="LogInPage_Test" description="User Successfully Login with valid creational" finished-at="2023-08-08T14:51:14 IST" duration-ms="3325" status="PASS">
+        <test-method signature="LogInPage_Test()[pri:-1, instance:TestClass.TC_002_LogInPage_Test@315105f]" started-at="2023-08-08T15:18:42 IST" name="LogInPage_Test" description="User Successfully Login with valid creational" finished-at="2023-08-08T15:18:45 IST" duration-ms="2975" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogInPage_Test -->
-        <test-method signature="LogInTest2()[pri:1, instance:TestClass.TC_002_LogInPage_Test@14c93774]" started-at="2023-08-08T14:51:15 IST" name="LogInTest2" description="User Login with invalid creational" finished-at="2023-08-08T14:51:26 IST" duration-ms="11549" status="FAIL">
+        <test-method signature="LogInTest2()[pri:1, instance:TestClass.TC_002_LogInPage_Test@315105f]" started-at="2023-08-08T15:18:46 IST" name="LogInTest2" finished-at="2023-08-08T15:18:57 IST" duration-ms="11343" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h2[normalize-space()='My Account']"}
@@ -39,9 +38,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.9.1', revision: 'eb2032df7f'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [45d2dea6e645e41096e73a971794a161, findElement {using=xpath, value=//h2[normalize-space()='My Account']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\kpkmt942\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51714/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 45d2dea6e645e41096e73a971794a161]]>
+Command: [fcf59fc84b0736e162adb788bbd8104e, findElement {using=xpath, value=//h2[normalize-space()='My Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\kpkmt942\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54223/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fcf59fc84b0736e162adb788bbd8104e]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[normalize-space()='My Account']"}
@@ -50,9 +49,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.9.1', revision: 'eb2032df7f'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [45d2dea6e645e41096e73a971794a161, findElement {using=xpath, value=//h2[normalize-space()='My Account']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\kpkmt942\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51714/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 45d2dea6e645e41096e73a971794a161
+Command: [fcf59fc84b0736e162adb788bbd8104e, findElement {using=xpath, value=//h2[normalize-space()='My Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\kpkmt942\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54223/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fcf59fc84b0736e162adb788bbd8104e
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -73,7 +72,7 @@ at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invok
 at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
 at ActionClass.Action_Class.Isdisplayed(Action_Class.java:59)
 at PageObjects.HomePage.VerifyLogin(HomePage.java:86)
-at TestClass.TC_002_LogInPage_Test.LogInTest2(TC_002_LogInPage_Test.java:60)
+at TestClass.TC_002_LogInPage_Test.LogInTest2(TC_002_LogInPage_Test.java:59)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -102,13 +101,13 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogInTest2 -->
-        <test-method is-config="true" signature="Application_Close()[pri:0, instance:TestClass.TC_002_LogInPage_Test@14c93774]" started-at="2023-08-08T14:51:31 IST" name="Application_Close" finished-at="2023-08-08T14:51:32 IST" duration-ms="650" status="PASS">
+        <test-method is-config="true" signature="Application_Close()[pri:0, instance:TestClass.TC_002_LogInPage_Test@315105f]" started-at="2023-08-08T15:19:01 IST" name="Application_Close" finished-at="2023-08-08T15:19:02 IST" duration-ms="640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Close -->
       </class> <!-- TestClass.TC_002_LogInPage_Test -->
       <class name="TestClass.TC_001_IndexPage_Test">
-        <test-method is-config="true" signature="Launch_Application(java.lang.String)[pri:0, instance:TestClass.TC_001_IndexPage_Test@33379242]" started-at="2023-08-08T14:51:32 IST" name="Launch_Application" finished-at="2023-08-08T14:51:38 IST" duration-ms="6778" status="PASS">
+        <test-method is-config="true" signature="Launch_Application(java.lang.String)[pri:0, instance:TestClass.TC_001_IndexPage_Test@5b5ac798]" started-at="2023-08-08T15:19:02 IST" name="Launch_Application" finished-at="2023-08-08T15:19:08 IST" duration-ms="6494" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,11 +118,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Launch_Application -->
-        <test-method signature="LogoTest()[pri:1, instance:TestClass.TC_001_IndexPage_Test@33379242]" started-at="2023-08-08T14:51:38 IST" name="LogoTest" description="User As to Verify logo is present or not" finished-at="2023-08-08T14:51:39 IST" duration-ms="39" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LogoTest -->
-        <test-method signature="TitleTest()[pri:2, instance:TestClass.TC_001_IndexPage_Test@33379242]" started-at="2023-08-08T14:51:39 IST" name="TitleTest" finished-at="2023-08-08T14:51:39 IST" duration-ms="20" status="FAIL">
+        <test-method signature="TitleTest()[pri:2, instance:TestClass.TC_001_IndexPage_Test@5b5ac798]" started-at="2023-08-08T15:19:08 IST" name="TitleTest" description="User As Check the Title of the page" finished-at="2023-08-08T15:19:08 IST" duration-ms="22" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Your Sto] but found [Your Store]]]>
@@ -165,7 +160,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TitleTest -->
-        <test-method is-config="true" signature="Application_Close()[pri:0, instance:TestClass.TC_001_IndexPage_Test@33379242]" started-at="2023-08-08T14:51:42 IST" name="Application_Close" finished-at="2023-08-08T14:51:42 IST" duration-ms="729" status="PASS">
+        <test-method is-config="true" signature="Application_Close()[pri:0, instance:TestClass.TC_001_IndexPage_Test@5b5ac798]" started-at="2023-08-08T15:19:11 IST" name="Application_Close" finished-at="2023-08-08T15:19:12 IST" duration-ms="643" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Close -->

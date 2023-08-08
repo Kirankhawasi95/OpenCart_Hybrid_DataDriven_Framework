@@ -106,7 +106,7 @@ public class ExtentReportManager implements ITestListener {
 			//Rise A ticket
 			System.out.println("Ticket is ready for Jira:"+ isTicketReady );
 			JiraServiceProvider JiraSp=new JiraServiceProvider("https://jirabymgtech.atlassian.net/","kiran831431@gmail.com",
-					"ATATT3xFfGF08D2cEgObE9XFJMn-JkDQdXl5vid8zySc7CAks_XsBAxdAgaQ5XCIoZdZ3eZcL3Unj374kq7v3w7VmQ47clnABKTwibTjUQN3abcXBn0-sWGa7D2P8p-CkQf5z32kchYZ-7JDtR4e5E4dCmdgghCHsHOju_CwBBeoPEXJw8s5k-8=F9519619"
+					"ATATT3xFfGF0WJySpSiNU2bUCY0_75qjS8hHu96QD3lsifEYBegCXWR_vkdBtESe-Kb7028hxCIYdasFe-oq5p9cxmalonO_LD2j4yrOaX7N8gNvwq2NgIhETSaDCwHsbB6fVOjYtfVoLknmAHekGsaJ2RG8L5a8Sr-sPV_aGRFZtbX9v1Hzulc=650B639F"
 					,"OD");
 			
 			String issueSummary=result.getMethod().getConstructorOrMethod().getMethod()

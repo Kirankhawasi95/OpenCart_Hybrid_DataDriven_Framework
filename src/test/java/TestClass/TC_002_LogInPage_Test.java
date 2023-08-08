@@ -48,8 +48,7 @@ public class TC_002_LogInPage_Test extends BaseClass{
 		
 		
 			@JiraPolicy(logTicketReady=true)
-			@Test(groups="Sanity", priority=1, description = "User Login with invalid creational"
-					+ "")
+			@Test(groups="Sanity", priority=1)
 			public void LogInTest2()
 			{
 				ip=new IndexPage(driver);
