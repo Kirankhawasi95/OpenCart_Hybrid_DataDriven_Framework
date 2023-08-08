@@ -40,7 +40,7 @@ public class TC_001_IndexPage_Test extends BaseClass{
 		}
 		
 		@JiraPolicy(logTicketReady=true)
-		@Test(groups="Smoke",priority = 2, description="User As Check the Title of the page")
+		@Test(groups="Smoke",priority = 2)
 		public  static void TitleTest()
 		{
 		IndexPage ip=new IndexPage(driver);

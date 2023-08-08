@@ -7,13 +7,6 @@
   <test thread-count="5" parallel="tests" name="ChromeBrowserTest(failed)" verbose="0">
     <parameter name="Browser" value="Chrome"/>
     <classes>
-      <class name="TestClass.TC_001_IndexPage_Test">
-        <methods>
-          <include name="TitleTest"/>
-          <include name="Launch_Application"/>
-          <include name="Application_Close"/>
-        </methods>
-      </class> <!-- TestClass.TC_001_IndexPage_Test -->
       <class name="TestClass.TC_002_LogInPage_Test">
         <methods>
           <include name="Launch_Application"/>
@@ -21,6 +14,13 @@
           <include name="LogInTest2"/>
         </methods>
       </class> <!-- TestClass.TC_002_LogInPage_Test -->
+      <class name="TestClass.TC_001_IndexPage_Test">
+        <methods>
+          <include name="TitleTest"/>
+          <include name="Launch_Application"/>
+          <include name="Application_Close"/>
+        </methods>
+      </class> <!-- TestClass.TC_001_IndexPage_Test -->
     </classes>
   </test> <!-- ChromeBrowserTest(failed) -->
 </suite> <!-- Failed suite [My_Suite] -->
