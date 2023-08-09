@@ -41,7 +41,7 @@ public class ExtentReportManager implements ITestListener {
 	public void onStart(ITestContext context) 
 	{
 		
-	String timestam= new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss"). format (new Date());
+	//String timestam= new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss"). format (new Date());
 	
 	repName = "Test-Report-" +  ".html";
 		
@@ -66,7 +66,7 @@ public class ExtentReportManager implements ITestListener {
 
 
 	public void onTestSuccess(ITestResult result) {
-		String timestam= new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss"). format (new Date());
+		//String timestam= new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss"). format (new Date());
 		test = extent.createTest(result.getName()); // create a new entry in the report
 		test.log(Status.PASS, "Test case PASSED is:" + result.getName()); // update status p/f/s
 		
@@ -83,7 +83,7 @@ public class ExtentReportManager implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		
 		
-		String timestam= new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss"). format (new Date());
+		
 		test = extent.createTest(result.getName());
 		test.log(Status.FAIL, "Test case FAILED is:" + result.getName());
 		test.log(Status.FAIL, "Test Case FAILED cause is: " + result.getThrowable());
@@ -106,25 +106,26 @@ public class ExtentReportManager implements ITestListener {
 			//Rise A ticket
 			System.out.println("Ticket is ready for Jira:"+ isTicketReady );
 			JiraServiceProvider JiraSp=new JiraServiceProvider("https://jirabymgtech.atlassian.net/","kiran831431@gmail.com",
-					"ATATT3xFfGF0Ch2q5cOLCdvQ5RmMEbIazZmJkQ03UzgsaMhK9wZgIBRt3zEcKzs5vXQeV50NM6vbflwCD-XLW9E_828LHM9dt2I_mz-ibS32EEzmJDqEPKIVYx0ViC5LyouId6i6b0AUOuoQpRdD6Zfd2idIj6PrTdvLf0CoJkLODoLkrGTHcwg=7DFF2C35"
-					,"OD");
+					"ATATT3xFfGF0koVavDwWzI3Be6owjiiS1DTzJ_9puZphRfx0JpFWz_bGWEUEUir2SpF_cVclE7X23Q7cfSlYW8Bf2Hs_zvaaJS0GAss938nHa2oTCUvtFVAYwv-kA0axySFLjFEg--rEZgn8MYp6Bnd2fZlBJJUWOg1dlfWRtYtqRtTCgirxhiw=461E7A71"
+					,"OP");
+			
 			
 			String issueSummary=result.getMethod().getConstructorOrMethod().getMethod()
 					.getName()+"Got failed due to some assertions  or expectation";
 			String issueDescription=result.getThrowable().getMessage() + "\n";
-			issueDescription.concat(ExceptionUtils.getFullStackTrace(result.getThrowable()));
+			issueDescription=issueDescription.concat(ExceptionUtils.getFullStackTrace(result.getThrowable()));
 			
-			JiraSp.createJiraTicket("Bug", issueSummary,issueDescription, "Kiran");
+		 JiraSp.createJiraTicket("Bug", issueSummary,issueDescription, "Kiran");
 		}
 		
-		
+//		
 		try {
 			TestLinkIntigration.UpdateResult(result, "This test case is Executed through automation scripts and test case is failed",TestLinkAPIClient.TEST_FAILED);
 		} catch (Throwable e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+//		
 		
 		
 					

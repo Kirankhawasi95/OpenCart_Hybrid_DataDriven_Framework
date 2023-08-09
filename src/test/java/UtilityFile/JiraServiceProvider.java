@@ -20,7 +20,7 @@ public class JiraServiceProvider {
 	}
 	
 	
-	public void createJiraTicket(String issueType, String Summary, String description, String reportName)
+	public void  createJiraTicket(String issueType, String Summary, String description, String reportName)
 	{
 		
 		try {
